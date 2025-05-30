@@ -1,0 +1,323 @@
+[
+    {
+        "key": "group_64f81b1e12151",
+        "title": "Codecaste PMS",
+        "fields": [
+            {
+                "key": "field_64f81b4213d3f",
+                "label": "Priority",
+                "name": "priority",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "high": "High",
+                    "medium": "Medium",
+                    "low": "Low"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "label",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_64fef38a33f1e",
+                "label": "Project",
+                "name": "project",
+                "aria-label": "",
+                "type": "post_object",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "projects"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "multiple": 0,
+                "return_format": "object",
+                "ui": 1,
+                "bidirectional_target": []
+            },
+            {
+                "key": "field_672ca82586038",
+                "label": "Candidate Name",
+                "name": "candidate_name",
+                "aria-label": "",
+                "type": "user",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "role": "",
+                "return_format": "array",
+                "multiple": 0,
+                "allow_null": 0,
+                "allow_in_bindings": 1,
+                "bidirectional": 0,
+                "bidirectional_target": []
+            },
+            {
+                "key": "field_676a617d6908d",
+                "label": "Allocated Time",
+                "name": "t_allocated_time",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_676a61ce6908e",
+                "label": "Timers",
+                "name": "timers",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_679b47f4eaba5",
+                        "label": "Unique Id",
+                        "name": "unique_id",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_676a61ce6908e"
+                    },
+                    {
+                        "key": "field_676a61ea6908f",
+                        "label": "Start Time",
+                        "name": "start_timer",
+                        "aria-label": "",
+                        "type": "date_time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "Y-m-d H:i:s",
+                        "return_format": "Y-m-d H:i:s",
+                        "first_day": 1,
+                        "parent_repeater": "field_676a61ce6908e"
+                    },
+                    {
+                        "key": "field_676a621d69090",
+                        "label": "Stop Time",
+                        "name": "stop_timer",
+                        "aria-label": "",
+                        "type": "date_time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "Y-m-d H:i:s",
+                        "return_format": "Y-m-d H:i:s",
+                        "first_day": 1,
+                        "parent_repeater": "field_676a61ce6908e"
+                    },
+                    {
+                        "key": "field_676a624969091",
+                        "label": "Total Time Consumed",
+                        "name": "total_time_consumed",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_676a61ce6908e"
+                    },
+                    {
+                        "key": "field_677cda534211b",
+                        "label": "user",
+                        "name": "user",
+                        "aria-label": "",
+                        "type": "user",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "role": "",
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "return_format": "array",
+                        "bidirectional_target": [],
+                        "parent_repeater": "field_676a61ce6908e"
+                    }
+                ]
+            },
+            {
+                "key": "field_67a5e1ee9980e",
+                "label": "Due Date",
+                "name": "due_date",
+                "aria-label": "",
+                "type": "date_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "d\/m\/Y",
+                "return_format": "d\/m\/Y",
+                "first_day": 1
+            },
+            {
+                "key": "field_67ab22f71fc92",
+                "label": "New Timer",
+                "name": "new_timer",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_67ab23101fc93",
+                        "label": "start_timer",
+                        "name": "start_timer",
+                        "aria-label": "",
+                        "type": "date_time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "Y-m-d H:i:s",
+                        "return_format": "d\/m\/Y g:i a",
+                        "first_day": 1,
+                        "parent_repeater": "field_67ab22f71fc92"
+                    },
+                    {
+                        "key": "field_67ab233e4bf1b",
+                        "label": "stop_timer",
+                        "name": "stop_timer",
+                        "aria-label": "",
+                        "type": "date_time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "Y-m-d H:i:s",
+                        "return_format": "d\/m\/Y g:i a",
+                        "first_day": 1,
+                        "parent_repeater": "field_67ab22f71fc92"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "tasks"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
