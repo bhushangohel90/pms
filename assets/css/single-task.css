@@ -1,0 +1,177 @@
+	#task_status {
+		font-size: 16px; /* Increase the font size */
+		padding: 10px 25px; /* Add padding to make the dropdown bigger */
+		width: 100%; /* Make the dropdown span the full width */
+		max-width: 300px; /* Optional: Set a maximum width */
+		border: 2px solid #66c; /* Border color */
+		border-radius: 8px; /* Rounded corners */
+		background-color: #f0f8ff; /* Light background color */
+		color: #333; /* Text color */
+		transition: all 0.3s ease; /* Smooth transition for hover and focus effects */
+	}
+
+	/* Style for the options inside the dropdown */
+	#task_status option {
+		padding: 10px 15px; /* Add padding to make options look more spacious */
+	}
+
+	/* Hover effect for the select box */
+	#task_status:hover {
+		border-color: #3388cc; /* Change border color when hovered */
+		background-color: #e6f7ff; /* Light background color on hover */
+	}
+
+	/* Focus effect for the select box */
+	#task_status:focus {
+		outline: none; /* Remove the default focus outline */
+		border-color: #3399ff; /* Add border color when focused */
+		box-shadow: 0 0 10px rgba(51, 153, 255, 0.5); /* Add a glowing effect when focused */
+	}
+
+	/* Style for the dropdown list (optional) */
+	#task_status option:checked 
+    {
+		background-color: #66c; /* Background color for selected option */
+		color: white; /* Text color for the selected option */
+	}
+
+
+/* General styling for the timer container */
+#timer-container {
+   
+    background-color: #f4f7fb;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Title of remaining time */
+#remaining-time {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Time consumed paragraph */
+#time-consumed {
+    font-size: 1rem;
+    color: #34495e;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Timer buttons */
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Disabled button style */
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* List of timers */
+#timers-list {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+#timers-list li {
+    background-color: #ecf0f1;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Styling for elapsed time span */
+#elapsed-time {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 480px) {
+    #timer-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    #remaining-time {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+#timers-list {
+    position:static;
+    top: 400px;
+    right: 120px; 
+    z-index: 1000; 
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.task-assignment {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjust spacing between the elements */
+}
+
+.task-assignment .user {
+    font-size: 16px;
+}
+
+.task-assignment .breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Adjust spacing between breadcrumb items */
+}
+
+.task-assignment .breadcrumb-item a {
+    text-decoration: none;
+    color: #0073e6; /* Example link color */
+	padding-bottom:10px;
+	padding-top:10px;
+	font-family:unset;
+}
+
+.task-assignment .breadcrumb-item a:hover {
+    text-decoration: none;
+	background-color: #0073e6;
+	color:whitesmoke;
+	border-radius:10px;
+	padding-right:10px;
+	padding-left:10px;
+	
+}

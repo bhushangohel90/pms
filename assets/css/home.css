@@ -1,0 +1,84 @@
+#main-div {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Section Headings */
+#main-div h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0073aa;
+    padding-bottom: 5px;
+}
+
+/* Page Links List */
+#main-div ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+#main-div ul li {
+    margin: 10px 0;
+}
+
+#main-div ul li a {
+    text-decoration: none;
+    color: #0073aa;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+#main-div ul li a:hover {
+    color: #005177;
+    text-decoration: underline;
+}
+
+/* User List Styling */
+.user-list {
+    list-style: disc inside;
+    margin-top: 15px;
+}
+
+.user-list li {
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.user-list li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.user-list li a:hover {
+    color: #0073aa;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main-div {
+        padding: 15px;
+    }
+
+    #main-div h2 {
+        font-size: 1.6rem;
+    }
+
+    #main-div ul li a {
+        font-size: 1rem;
+    }
+
+    .user-list li a {
+        font-size: 1rem;
+    }
+}

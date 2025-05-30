@@ -1,0 +1,157 @@
+/* General Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #555;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.user-block .user-tasks {
+    padding-top: 28px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+/* User List Styling */
+.users-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding: 80px;
+}
+
+/* User Block Styling */
+.user-block {
+    flex: 0 1 calc(50% - 20px);
+    background:#e3ebed;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition:transform 0.5s ease;
+	margin: 5px;
+}
+
+.user-block:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* User Info Styling */
+
+.user-info h2 {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #60A4EC;
+    border-radius: 54px;
+	background:#60A4EC;
+	margin-left: 200px;
+    margin-right: 200px;
+}
+.user-info h2:hover {
+    text-decoration: none;
+    color:#60A4EC;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #60A4EC;
+    border-radius: 54px;
+	background:white;
+	margin-left: 200px;
+    margin-right: 200px;
+}
+
+.user-info p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Task List Styling */
+.user-tasks h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    background: #ffffff;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.task-list li:hover {
+    background: #f9f9f9;
+}
+
+.task-list li a {
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.task-title {
+    font-weight: bold;
+}
+
+.task-status {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-block {
+        flex: 0 1 100%;
+    }
+}
+.task-time{
+	color:red;
+}
+
+
+
+/* Light mode styles (default) */
+	body {
+		background-color: #ffffff;
+		color: #000000;
+	}
+
+	/* Dark mode styles */
+	body.dark-mode {
+		background-color: #121212;
+		color: #ffffff;
+	}
+
+	/* Optional styles for the toggle button */
+	.mode-toggle {
+		cursor: pointer;
+		padding: 10px;
+		border: none;
+		background: none;
+		font-size: 16px;
+	}
+
+
+
